@@ -1,0 +1,31 @@
+<footer class="container py-5">
+    <div class="row"></div>
+        <div class="col-6 col-md">
+            <h5>Links</h5>
+            <ul class="list-unstyled text-small">
+            {{ range .Site.Menus.footer }}
+                <li>
+                    <a href="{{ .URL }}" class="link-secondary">{{ .Name }}</a>
+                </li>
+            {{ end }}
+            </ul>
+        </div>
+        <div class="col-12 col-md">
+            <span class="copy">Copyright &copy; {{ .Site.Params.mysite.copystart }} - {{ dateFormat "2006" now }} {{ .Site.Params.mysite.author }}.</span>
+        </div>
+        {{if .Site.Params.mysite.debug }}
+      <table class="table table-sm">
+        <caption>Hugo Variables for current page</caption>
+        <tr><th>Name</th><td>{{ .Name }}</td></tr>
+        <tr><th>Kind</th><td>{{ .Kind }}</td></tr>
+        <tr><th>Type</th><td>{{ .Type }}</td></tr>
+        <tr><th>List Page</th><td>.Pages</td></tr>
+        <tr><th>IsPage</th><td>{{ .IsPage }}</td></tr>
+        <tr><th>IsHome</th><td>{{ .IsPage }}</td></tr>
+        <tr><th>Next</th><td>{{ .Next }}</td></tr>
+        <tr><th>Prev</th><td>{{ .Prev }}</td></tr>
+        <tr><th>Section</th><td>{{ .CurrentSection }}</td></tr>
+      </table>
+    {{ end }}
+    </div>
+  </footer>
