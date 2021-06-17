@@ -4,15 +4,15 @@
 name = "dj-hugo-1"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "Simple Hugo theme with all the necessary SEO tags"
 homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Dick Johnson"
+  homepage = "firewerkz.dev"
 
 # If porting an existing theme
 [original]
