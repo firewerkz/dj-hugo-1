@@ -13,6 +13,9 @@
         <div class="col-12 col-md">
             <span class="copy">Copyright &copy; {{ .Site.Params.mysite.copystart }} - {{ dateFormat "2006" now }} {{ .Site.Params.mysite.author }}.</span>
         </div>
+        <div class="col-12 col-md">
+          <small>Site last updated at {{ now.Format "02 Jan 06 15:04 MST"}}</small>
+      </div>
         {{if .Site.Params.mysite.debug }}
       <table class="table table-sm">
         <caption>Hugo Variables for current page</caption>
